@@ -1,0 +1,37 @@
+﻿Defining & Solving RL Environments
+	
+
+
+
+
+
+                
+        
+
+
+1. Defining RL environments
+
+
+* My environment layout is essentially a 4x4 grid which represents sixteen possible states. The agent can perform four actions. These actions are recorded as 2D movements in the grid, which are up, down, left and right. These movements or actions are to help the agent reach its goal position.
+* The goal position or Terminal stage represents the final stage that the agent is supposed to reach.
+* In order to obtain the purpose or goal, the agent is encouraged by giving it rewards. These rewards are passed from the environment to the agent and are placed in the spaces within the grid.
+* Rewards within the grids are placed at the following positions:
+pos2 = [0, 2]
+pos3 = [1, 0]
+pos4 = [2, 1]
+pos5 = [2, 2]
+pos6 = [3, 2]
+
+The above positions give the row and column values to locate the rewards placed. The goal position is given by ‘pos6’.
+* The main objective of the agent is to obtain maximum rewards while reaching the goal position.
+
+
+
+
+   1. Defining the stochastic environment.
+   * The application of np.random.random() introduces the unpredictable factor into this environment which makes it stochastic. Future actions are decided by this unpredicted value which is assigned to a variable.
+   * The next action to be taken and the reward achieved both depend upon the variable value.
+   * For a certain range actions and rewards are assigned. The agent would obtain these rewards or conduct actions based upon which instruction it receives according to the assigned range.
+   1. The difference between the deterministic and stochastic environments.
+   * In a deterministic environment the outcome of the process is consistent for a given set of instructions. Deterministic environment has no factor of randomness. All the data needed for predicting a definite outcome is available. 
+   * On the other hand, the outcome in a stochastic environment is unpredictable and this process generates a set of possible outcomes.
